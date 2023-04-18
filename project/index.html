@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    background-image: url("bg.jpg");
+  }
+  h2 {
+      font-family: 'Comic Sans MS';
+      text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    font-size: 20px;
+  }
+  img {
+   object-fit: contain;
+   margin:0 auto;
+   width: 600px;
+   height: 500px;
+}
+  button {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  </style>
+  
+</head>
+
+<body>
+
+<h2>HÌNH VUÔNG KHÔN KHÉO</h2>
+
+<p>Bốn que diêm trong hình được xếp thành một hình chữ nhật Hy Lạp với 4 nhánh bằng nhau. Bạn hãy dịch chuyển chỉ một que sao cho tạo thành một hình vuông mới.</p>
+
+<button onclick="document.getElementById('imgClickAndChange').src='matches.png'">Quay lại câu đố</button>
+
+<img id="imgClickAndChange" src="matches.png">
+
+<button onclick="document.getElementById('imgClickAndChange').src='ans.png'">Đáp án</button>
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gợi ý
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Nhớ này, hình vuông có thể có nhiều kích cỡ khác nhau.</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
